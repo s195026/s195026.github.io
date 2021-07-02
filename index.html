@@ -1271,7 +1271,13 @@
 				</tbody>
 			</table>
 			<!-- 選択したのは、{{ myChecks }} -->
-            <h2>結果:</h2><p> {{ myChecks }}</p>
+      				<h2>結果:</h2>
+					<ul>
+						<tr v-for="line in ranking">
+							<li v-for ="item in myChecks">{{item}}
+							</li>
+						</tr>
+					</ul>
         </div>
                 
         <script>
