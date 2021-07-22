@@ -1342,7 +1342,7 @@
 						<td v-for="item in line">{{ item }}
 							<label><input type="checkbox" value="No.198　一文字則宗" v-model="myChecks">
 								一文字則宗</label><br>
-								<img src="p/198.jpg" width="90" height="130" >
+								<img src="p/198.jpg" width="90" height="130">
 						</td>
 						<td v-for="item in line">{{ item }}
 							<label><input type="checkbox" value="" v-model="myChecks">
@@ -1356,7 +1356,7 @@
 						<td v-for="item in line">{{ item }}
 							<label><input type="checkbox" value="No.200　村雲江" v-model="myChecks">
 								村雲江 </label><br>
-								<img src="200.jpg" width="90" height="130" >
+								<img src="p/200.jpg" width="90" height="130">
 						</td>
 						<td v-for="item in line">{{ item }}
 							<label><input type="checkbox" value="" v-model="myChecks">
@@ -1375,10 +1375,8 @@
 						<tr v-for="line in ranking">
 							<li v-for ="item in myChecks">{{item}}
 							</li>
-							<p>を所持していません。</p>
 						</tr>
 					</ul>
-					
             
         </div>
                 
@@ -1390,8 +1388,7 @@
 					ranking: [
 						[''],
 					],
-					myChecks:[],
-					failName:''
+					myChecks:[]
 				}
 			})
 		</script>		
